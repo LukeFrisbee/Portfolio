@@ -1,0 +1,120 @@
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+.about-me-paragraph {
+  font-size: 19px;
+}
+
+.navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    z-index: 999;
+}
+
+.navbar {
+    margin-bottom: 0
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .text-sm-center {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .text-sm-center {
+        text-align: left;
+    }
+}
+
+
+.heading, .heading h1 {
+    text-align: center;
+}
+
+section div.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.bio {
+    background-color: #234875;
+    color: white;
+}
+
+.projects {
+    background-color: lightgray;
+    color: black;
+}
+
+.sm-video-wrapper {
+    width: 251px;
+    margin: 30px auto 10px;
+    max-width: 100%;
+}
+
+.video-responsive {
+    max-width: 100%;
+}
+
+.lg-video-wrapper {
+    width: 720px;
+    margin: 30px auto 10px;
+    max-width: 100%;
+}
+
+.no-video-wrapper {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.skills {
+    background-color: white;
+    color: black;
+}
+
+    .skills div.container {
+        max-width: 768px;
+    }
+
+    .skills h4 {
+        display: inline-block
+    }
+
+.skill-icon {
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.profile-img {
+  height: 400px;
+  width: 340px;
+  border-radius: 10%;
+  vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+    background-color: #234875;
+    padding: 35px;
+    color: white;
+    font-size: 18px;
+}
