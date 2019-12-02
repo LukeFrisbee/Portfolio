@@ -1,3 +1,11 @@
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+.about-me-paragraph {
+  font-size: 19px;
+}
+
 .navbar-wrapper {
     position: fixed;
     top: 0;
@@ -29,7 +37,7 @@
 }
 
 
-.heading, .heading h2 {
+.heading, .heading h1 {
     text-align: center;
 }
 
@@ -92,7 +100,16 @@ section div.container {
     background-color: transparent;
     border-radius: 50%;
     vertical-align: middle;
-    margin-right: 20px;
+}
+
+.profile-img {
+  height: 400px;
+  width: 340px;
+  border-radius: 10%;
+  vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
