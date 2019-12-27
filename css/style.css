@@ -76,6 +76,17 @@ section div.container {
     max-width: 100%;
 }
 
+.game-wrapper {
+    width: 960px;
+    margin: 30px auto 10px;
+    max-width: 100%;
+}
+
+.game-responsive {
+    max-width: 100%;
+    padding-top: 62.5%;
+}
+
 .no-video-wrapper {
     border: 1px solid black;
     padding: 8px;

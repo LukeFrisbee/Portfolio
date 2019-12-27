@@ -11,6 +11,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      UnityLoader.instantiate("unityContainer", "Build/SoulSnatcherWebGl.json");
+    </script>
 </head>
 <body>
     <div class="navbar-wrapper">
@@ -127,6 +132,24 @@
                     </p>
                 </div>
             </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="game-wrapper">
+                    <div id="unityContainer" class="game-responsive"></div>
+                </div>
+                <div class="col-lg-12">
+                    <h3 class="text-center">Soul Snatcher</h3>
+                    <p>
+                        Soul Snatcher is a WebGL game built within 48 hours for a Game Jam. The theme required in the competition was "Death is Good."
+                        To go by the theme, the player does not lose when they die. Instead, they power up, attacking more quickly.
+                        The catch is every time the player shoots; they lose some of their "soul" life. Run out of life, and it's game over!
+                        The player can't die too many times, or else they won't be able to handle the power given to them! 
+                    </p>
+                </div>
+              </div>
+            </div>
+
         </div>
     </section>
 
@@ -184,5 +207,16 @@
             });
         });
     </script>-->
+    <script>
+      $( document).ready(function() {
+        changeHeight();
+        $( window ).resize(changeHeight);
+      });
+      function changeHeight(){
+        var unityContainer = $('#unityContainer');
+        var w = unityContainer.width();
+        unityContainer.height(w * .625);
+      }
+    </script>
 </body>
 </html>
