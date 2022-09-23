@@ -1,5 +1,31 @@
+* {
+    font-family: Montserrat;
+}
+
+p {
+    font-size: medium;
+}
+
 h1, h2, h3 {
   font-weight: bold;
+}
+
+.name {
+    color: #ea1b24;
+    font-size: 100px;
+    -webkit-text-stroke: 3px black;
+}
+
+.title {
+    color: #088ffc;
+    font-size: 45px;
+    -webkit-text-stroke: 2px black;
+}
+
+.white {
+    color: white;
+    font-size: 47px;
+    -webkit-text-stroke: 0px;
 }
 
 .about-me-paragraph {
@@ -42,21 +68,27 @@ h1, h2, h3 {
 }
 
 section div.container {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .row {
-    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+.title-with-icon
+{
+    margin-right: 40px;
 }
 
 .about-me {
-    background-color: #234875;
+    background-color: #088ffc;
     color: white;
 }
 
 .projects {
-    background-color: lightgray;
+    background-color: white;
     color: black;
 }
 
@@ -68,6 +100,7 @@ section div.container {
 
 .video-responsive {
     max-width: 100%;
+    margin-top: 75px;
 }
 
 .lg-video-wrapper {
@@ -93,7 +126,7 @@ section div.container {
 }
 
 .skills {
-    background-color: white;
+    background-color: lightgray;
     color: black;
 }
 
@@ -104,6 +137,24 @@ section div.container {
     .skills h4 {
         display: inline-block
     }
+
+.unreal-icon {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px; 
+}
+
+.unity-icon {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px; 
+}
 
 .skill-icon {
     height: 60px;
@@ -124,8 +175,25 @@ section div.container {
 }
 
 .footer {
-    background-color: #234875;
+    background-color: #088ffc;
     padding: 35px;
     color: white;
     font-size: 18px;
+}
+
+.gray-background {
+    background-color: #eee;
+}
+
+.gray-background2 {
+    background-color: #eee;
+}
+
+.blue-background {
+    background-color: #088ffc;
+}
+
+.side-padding {
+    padding-left: 40px;
+    padding-right: 40px;
 }
