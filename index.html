@@ -16,51 +16,21 @@
 </head>
 
 <body>
-    <!--<div class="navbar-wrapper">
-        <div class="container">
-            <div class="navwrapper">
-                <div class="navbar navbar-inverse navbar-static-top">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="menuItem"><a href="#about-me">About Me</a></li>
-                                <li class="menuItem"><a href="#projects">Projects</a></li>
-                                <li class="menuItem"><a href="#skills">Skills</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
 
+    <!-- Name Header -->
     <section class="name-header" id="name-header">
         <div class="container">
-            <!--<div class="heading">
-                <h1>About Me</h1>
-            </div>-->
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                     <h1 class="name">Luke Frisbee</h1>
-                    <h3 class="title"> Software Engineer &amp; <span class="white">Game Developer</span></h3>
-                    <!--<p class="about-me-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Condimentum lacinia quis vel eros donec ac odio tempor orci. Sagittis orci a scelerisque purus semper. Blandit aliquam etiam erat velit scelerisque in dictum non consectetur. Venenatis cras sed felis eget. Sit amet mauris commodo quis imperdiet massa tincidunt. Est pellentesque elit ullamcorper dignissim cras. Sit amet aliquam id diam maecenas. Ac tincidunt vitae semper quis. Aliquam nulla facilisi cras fermentum odio eu. Feugiat scelerisque varius morbi enim nunc faucibus. Lobortis mattis aliquam faucibus purus in massa. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Nisl tincidunt eget nullam non nisi est sit. Id semper risus in hendrerit gravida rutrum quisque non. Ut tristique et egestas quis ipsum. At consectetur lorem donec massa. Leo integer malesuada nunc vel risus commodo viverra maecenas.
-                    </p>-->
-                </div>
+                    <h3 class="white"> Software Engineer &amp; Game Developer</h3>
             </div>
         </div>
     </section>
 
+    <!-- Projects -->
     <section class="projects" id="projects">
         <div class="container">
-
             <!-- The Squeaky Affair -->
             <div class="row gray-background">
                 <div class="col-lg-12">
@@ -158,35 +128,9 @@
                     </div>
                 </div>
             </div>
-
-            <!--<div class="row gray-background">
-                <div class="col-lg-12">
-                    <div class="lg-video-wrapper">
-                        <video controls poster="images/EntropicSpace.png" width="720" class="video-responsive">
-                            <source src="videos/EntropicSpace.mp4" type="video/mp4">
-                            <div class="no-video-wrapper">
-                                Sorry, your browser does not support the &lt;video&gt; tag used on this page.
-                            </div>
-                        </video>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                  <h3 class="text-center">Entropic Space</h3>
-                  <p>
-                      Entropic Space is a recent five-day project built for a Game Jam. The theme of the Jam was "Lost in Space." I took it pretty literally, creating a minimalistic 3D space shooter.
-                      While it is a simple game, there were specific mechanics I found challenging to implement, especially within the five-day time frame I had. Most notably, the Flight System and Enemy Ship AI posed some obstacles.
-                      Luckily I had a team of friends to help me out: one with development, one with 3D modeling, and finally one with composing sounds and music.
-                      I lead them through the process, and due to their help, I was able to focus my attention on the more complicated obstacles. Thanks to them, I was able to complete this project within the given time-frame.
-                      (For more information, feel free to visit the itch.io widget posted below)
-                  </p>
-
-                    <div class="lg-video-wrapper">
-                    <iframe class="lg-video-wrapper" frameborder="0" src="https://itch.io/embed/543871?linkback=true&amp;bg_color=234875&amp;fg_color=ffffff&amp;link_color=000000&amp;border_color=234875" width="552" height="167"><a href="https://lukefrisbee.itch.io/entropic-space">Entropic Space by lukefrisbee</a></iframe>
-                    </div>
-                </div>
-              </div>-->
     </section>
 
+    <!-- Skills -->
     <section class="skills" id="skills">
         <div class="container">
             <div class="heading text-center">
@@ -225,33 +169,17 @@
             <h4><b>Others:</b> Github, HTML, CSS, ASP.NET, AWS, SQL, Java, Jupyter Notebook, Linux, etc.<h4>
         </div>
     </section>
+
+    <!-- Footer -->
     <section id="footer">
         <div class="footer">
             <span>&copy; 2022 Luke Frisbee </span>
         </div>
     </section>
 
-
-
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!--<script src="js/stickUp.min.js"></script>
-    <script type="text/javascript">
-        jQuery(function ($) {
-            $(document).ready(function () {
-                //enabling stickUp on the '.navbar-wrapper' class
-                $('.navbar-wrapper').stickUp({
-                    parts: {
-                        0: 'about-me',
-                        1: 'projects',
-                        2: 'skills'
-                    },
-                    itemClass: 'menuItem',
-                    itemHover: 'active'
-                });
-            });
-        });
-    </script>-->
     <script>
       $( document).ready(function() {
         changeHeight();
@@ -263,5 +191,6 @@
         unityContainer.height(w * .625);
       }
     </script>
+
 </body>
 </html>
