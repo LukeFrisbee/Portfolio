@@ -59,8 +59,8 @@ h1, h2, h3 {
 }
 
 
-.heading, .heading h1 {
-    text-align: center;
+.heading {
+    padding-top: 25px;
 }
 
 section div.container {
@@ -137,7 +137,6 @@ section div.container {
     height: 50px;
     width: 50px;
     background-color: transparent;
-    border-radius: 50%;
     vertical-align: middle;
     margin-right: 5px; 
 }
@@ -146,7 +145,6 @@ section div.container {
     height: 50px;
     width: 50px;
     background-color: transparent;
-    border-radius: 50%;
     vertical-align: middle;
     margin-right: 5px; 
 }
@@ -155,8 +153,11 @@ section div.container {
     height: 60px;
     width: 60px;
     background-color: transparent;
-    border-radius: 50%;
     vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .profile-img {
