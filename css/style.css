@@ -1,81 +1,61 @@
-p {
-    font-size: large;
+body {
+    background-color: #2e2e2e;
+    color: #F0F0F0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-h1, h2, h3 {
-  font-weight: bold;
+h1 {
+    font-size: 100px;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}    
+
+h2 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
 }
 
-.name {
-    color: black;
-    font-size: 70px;
+h3{
+    margin: 0;
+    font-weight: bold;
 }
 
-.white {
-    color: white;
-    font-size: 37px;
-    -webkit-text-stroke: 0px;
+p, ul {
+    margin: 0;
+    font-size: x-large;
 }
 
-.about-me-paragraph {
-  font-size: 19px;
-}
-
-.navbar-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #222;
-    z-index: 999;
-}
 
 .text-center {
     text-align: center;
 }
 
-@media (max-width: 991px) {
-    .text-sm-center {
-        text-align: center;
-    }
-}
-
-
-@media (min-width: 992px) {
-    .text-sm-center {
-        text-align: left;
-    }
-}
-
-.heading {
-    padding-top: 25px;
-}
-
-section div.container {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
 .row {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    max-width: 1000px; 
+    margin: 0 auto;
+    margin-bottom: 80px;
 }
 
-.title-with-icon
-{
-    margin-right: 40px;
+.container {
+    display: flex;
 }
 
-.name-header {
-    background-color: #088ffc;
-    color: white;
+.box {
+    margin: 0;
+    width: 200px; /* Sets each box width to 200px */
 }
 
-.projects {
-    background-color: white;
-    color: black;
+.footer {
+    padding: 35px;
+    font-size: 18px;
 }
 
+/* Video + game containers */
+/* */ 
+/* */ 
 .sm-video-wrapper {
     width: 251px;
     margin: 30px auto 10px;
@@ -108,54 +88,15 @@ section div.container {
     padding: 8px;
 }
 
-.skills {
-    background-color: #eee;
-    color: black;
-}
-
-    .skills div.container {
-        max-width: 768px;
+/* @media (max-width: 991px) {
+    .text-sm-center {
+        text-align: center;
     }
+}
 
-    .skills h4 {
-        display: inline-block
+
+@media (min-width: 992px) {
+    .text-sm-center {
+        text-align: left;
     }
-
-.unreal-icon, .unity-icon {
-    height: 50px;
-    width: 50px;
-    background-color: transparent;
-    vertical-align: middle;
-    margin-right: 5px; 
-}
-
-.skill-icon {
-    height: 60px;
-    width: 60px;
-    background-color: transparent;
-    vertical-align: middle;
-    margin-left: 5px;
-    margin-right: 5px; 
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.footer {
-    background-color: #088ffc;
-    padding: 35px;
-    color: white;
-    font-size: 18px;
-}
-
-.gray-background {
-    background-color: #e7e7e7;
-}
-
-.blue-background {
-    background-color: #088ffc;
-}
-
-.side-padding {
-    padding-left: 40px;
-    padding-right: 40px;
-}
+} */
