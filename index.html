@@ -16,63 +16,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
+<header class="site-header">
+    <div class="logo">
+        <img src="images/FrisbeeStudiosLogo.png" width = "75"> <!-- Replace with your logo or an <img> tag -->
+    </div>
+    <nav class="main-navigation">
+        <h2>Luke Frisbee</h2>
+    </nav>
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/lukefrisbee/" target="_blank" aria-label="Linkedin">
+            <img src="images/linkedin.png" class="white-icon" alt="LinkedIn Icon" width="35" height="35">
+        </a>
+        <a href="https://github.com/LukeFrisbee/" target="_blank" aria-label="Github">
+            <img src="images/github.png" class="white-icon" alt="LinkedIn Icon" width="35" height="35">
+        </a>
+        <a href="mailto:lukebfrisbee@gmail.com" target="_blank" aria-label="Email">
+            <img src="images/envelope.png" class="white-icon" alt="LinkedIn Icon" width="35" height="35">
+        </a>
+    </div>
+</header>
+
+
 <body>
-    <section id = "Name">
+    <section id>
         <div class="row">
-            <h1 class="name">Luke Frisbee</h1>
-            <!-- <h3 class="white"> - Game Developer</h3> -->
         </div>
     </section>
 
     <!-- Skills -->
-    <section id = "Skills">
+    <!-- <section id = "Skills">
         <div class="row">
-            <h2> Skills </h2>
-            <div class="container">
-                <div class="box">
-                    <ul>
-                        <li>C++</li>
-                        <li>C#</li>
-                        <li>GLSL</li>
-                        <li>HLSL</li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <ul>
-                        <li>Unity Engine</li>
-                        <li>Unreal Engine</li>
-                        <li>Vulkan</li>
-                        <li>OpenGL</li>
-                    </ul>
-                </div>
+                <div class="text-box">
+                <h2> Skills </h2>
+                <ul>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>GLSL</li>
+                    <li>HLSL</li>
+                    <li>Unity Engine</li>
+                    <li>Unreal Engine</li>
+                    <li>Vulkan</li>
+                    <li>OpenGL</li>
+                </ul>
             </div>
         </div>
-    </section>  
+    </section>   -->
 
     <!-- Projects -->
-    <section id = "Projects">
-        <!-- Quacking The Case -->
+    <section id="Projects">
         <div class="row">
-            <h2> Quacking The Case </h2>
-            <p> 
-                Quacking The Case is a logic puzzle game releasing on steam Q1 2025.
-            </p>
-            <p>
-                C# &nbsp; • &nbsp; Unity Engine
-            </p>
-            <iframe src="https://store.steampowered.com/widget/3156700/" frameborder="0" width="646" height="190"></iframe>
+            <div class="text-box">
+                <h2>Quacking The Case</h2>
+                <p>
+                    A logic puzzle game where players solve mysteries by connecting pins. Coming to Steam in Q1 2025.
+                </p>
+                <p>
+                    Tools: C# • Unity Engine
+                </p>
+            </div>
+            <div class="img-box">
+                <video alt="Quacking The Case Trailer" width = "535" controls>
+                    <source src="videos/QuackingTheCase-Trailer.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
-
-        <!-- Frisbe Engine  -->
+    
         <div class="row">
-            <h2 class=""> Vulkan Rendering Engine </h2>
-            <p> 
-                My C++ Vulkan based ECS game engine.
-            </p>
-            <p>
-                C++ &nbsp; • &nbsp; Vulkan &nbsp; • &nbsp; CMake &nbsp; • &nbsp; GLSL
-            </p>
-            <img src="images/editorUI.png" width="646"></img>
+            <div class="text-box">
+                <h2>Vulkan Rendering Engine</h2>
+                <p>
+                    A custom ECS game engine built in C++ with Vulkan. Focused on performance and flexibility.
+                </p>
+                <p>
+                    Tools: C++ • Vulkan • GLSL • CMake
+                </p>
+            </div>
+            <div class="img-box">
+                <img src="images/editorUI.png" alt="Engine UI" width="535">
+            </div>
         </div>
     </section>
 
