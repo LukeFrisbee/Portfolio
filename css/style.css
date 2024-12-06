@@ -112,6 +112,9 @@ a {
     color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease;
+
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
 }
 
 a:hover {
