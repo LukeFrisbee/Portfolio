@@ -14,35 +14,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-<header class="site-header">
+<header>
+    <!-- Logo -->
     <div class="logo">
-        <img src="images/FrisbeeStudiosLogo.png" width = "75"> <!-- Replace with your logo or an <img> tag -->
+        <img src="images/FrisbeeStudiosLogo.png" width="75" alt="Frisbee Studios Logo">
     </div>
+
+    <!-- Main Navigation -->
     <nav class="main-navigation">
         <h2>Luke Frisbee</h2>
     </nav>
+
+    <!-- Contact Section -->
     <div class="contact-icons">
+        <!-- Desktop Icons -->
         <a href="https://www.linkedin.com/in/lukefrisbee/" target="_blank" aria-label="Linkedin">
             <img src="images/linkedin.png" class="white-icon" alt="LinkedIn Icon" width="35" height="35">
         </a>
         <a href="https://github.com/LukeFrisbee/" target="_blank" aria-label="Github">
-            <img src="images/github.png" class="white-icon" alt="LinkedIn Icon" width="35" height="35">
-        </a>    
-        <a href="mailto:lukebfrisbee@gmail.com" target="_blank" aria-label="Email">
-            <img src="images/envelope.png" class="white-icon" alt="LinkedIn Icon" width="35" height="35">
+            <img src="images/github.png" class="white-icon" alt="Github Icon" width="35" height="35">
         </a>
+        <a href="mailto:lukebfrisbee@gmail.com" target="_blank" aria-label="Email">
+            <img src="images/envelope.png" class="white-icon" alt="Email Icon" width="35" height="35">
+        </a>
+    </div>
+
+    <!-- Contact Dropdown for Mobile -->
+    <div class="contact-dropdown">
+        <button class="dropdown-toggle">Contact</button>
+        <div class="dropdown-content">
+            <a href="https://www.linkedin.com/in/lukefrisbee/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/LukeFrisbee/" target="_blank">GitHub</a>
+            <a href="mailto:lukebfrisbee@gmail.com" target="_blank">Email</a>
+        </div>
     </div>
 </header>
 
 
 <body>
-    <section id>
-        <div class="row">
+    <section id = "About Me">
+    <div class="row">
+        <div class="dark-background full-width-box about-me">
+            <h2>About me</h2>
+            <p>Hi, I'm <b>Luke Frisbee!</b> I love taking an idea (like a duck detective solving puzzles) and turning it into something people can actually play, explore, and smile about.</p>
+            <p>It’s always fun figuring things out with other people, whether it’s untangling a tricky mechanic or seeing how someone else’s perspective can take an idea in a direction you’d never expect. 
+                The best projects seem to come together when <b>everyone feels heard</b>, and the end result feels like something you couldn’t have made on your own. There’s nothing better than knowing what you’ve built makes sense to others, whether they’re playing it or helping bring it to life.</p>
         </div>
-    </section>
+    </div>
 
+
+    </section>
     <!-- Skills -->
     <!-- <section id = "Skills">
         <div class="row">
@@ -62,7 +88,44 @@
         </div>
     </section>   -->
 
-    <section id = "Beliefs">
+    <!-- Projects -->
+    <section id="Projects">
+        <div class="row">
+            <div class="grid-element">
+                <video alt="Quacking The Case Trailer" class="video-responsive" controls>
+                    <source src="videos/QuackingTheCase-Trailer.mp4" type="video/mp4">
+                </video>
+                <div class="dark-background project-description">
+                    <h2>Quacking The Case</h2>
+                    <p>My personal commercial project releasing to steam Q1 2025.</p>
+                    <ul>
+                        <li>
+                            <b>Tools:</b> C#, Unity Engine
+                        </li>
+                        <li>
+                            <b>Link: </b><a href="https://store.steampowered.com/app/3156700/Quacking_The_Case/" target="_blank">https://store.steampowered.com/app/3156700/Quacking_The_Case</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="grid-element">
+                <img src="images/editorUI.png" alt="Engine UI" class="video-responsive">
+                <div class="project-description dark-background">
+                    <h2>Vulkan Rendering Engine</h2>
+                    <p>
+                        This is my custom ECS game engine built from scratch with C++ and Vulkan. 
+                    </p>
+                    <ul>
+                        <li><b>Tools:</b> C++, Vulkan, GLSL, CMake</li>
+                        <li><b>Link: </b><a href="https://github.com/LukeFrisbee/Frisbee_Engine" target="_blank">https://github.com/LukeFrisbee/Frisbee_Engine</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id = "Beliefs">
         <div class="row">
             <div class="dark-background full-width-box">
                 <h2>I Believe:</h2>
@@ -77,46 +140,7 @@
                 </ul>
             </div>
         </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="Projects">
-        <div class="row">
-            <div class="text-box dark-background">
-                <h2>Quacking The Case</h2>
-                <p>My solo project releasing to steam Q1 2025. I am responsible for all disciplines such as programming, game design, art, marketing, etc.</p>
-                <ul>
-                    <li>
-                        <b>Tools:</b> C#, Unity Engine
-                    </li>
-                    <li>
-                        <b>Link: </b><a href="https://store.steampowered.com/app/3156700/Quacking_The_Case/" target="_blank">https://store.steampowered.com/app/3156700/Quacking_The_Case</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="img-box">
-                <video alt="Quacking The Case Trailer" class="video-responsive" controls>
-                    <source src="videos/QuackingTheCase-Trailer.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    
-        <div class="row">
-            <div class="text-box dark-background">
-                <h2>Vulkan Rendering Engine</h2>
-                <p>
-                    A custom ECS game engine built in C++ with Vulkan. 
-                </p>
-                <ul>
-                    <li><b>Tools:</b> C++, Vulkan, GLSL, CMake</li>
-                    <li><b>Link: </b><a href="https://github.com/LukeFrisbee/Frisbee_Engine" target="_blank">https://github.com/LukeFrisbee/Frisbee_Engine</a></li>
-                </ul>
-            </div>
-            <div class="img-box">
-                <img src="images/editorUI.png" alt="Engine UI" class="video-responsive">
-            </div>
-        </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <section id="footer">
