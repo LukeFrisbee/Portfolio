@@ -113,7 +113,7 @@ a {
     text-decoration: none;
     transition: color 0.3s ease;
 
-    word-wrap: break-word; 
+    word-wrap: break-all; 
     overflow-wrap: break-word;
 }
 
