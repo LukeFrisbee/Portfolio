@@ -231,7 +231,7 @@ header .main-navigation h2 {
 }
 
 /* Mobile-Specific Styling */
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .logo {
         display: none; 
     }
@@ -252,4 +252,4 @@ header .main-navigation h2 {
     .main-navigation {
         order: -1;
     }
-}
+} */
