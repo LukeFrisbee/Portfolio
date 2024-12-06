@@ -1,81 +1,141 @@
-p {
-    font-size: large;
+:root {
+    --header-height: 60px; /* Define header height as a variable */
 }
 
-h1, h2, h3 {
-  font-weight: bold;
+body {
+    background-color: #1e1e1e;
+    color: #F0F0F0;
+    font-family: 'Roboto', sans-serif;
+    padding-top: var(--header-height);
 }
 
-.name {
-    color: black;
-    font-size: 70px;
+h1 {
+    font-size: 5.0rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}    
+
+h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: .3rem;
 }
 
-.white {
-    color: white;
-    font-size: 37px;
-    -webkit-text-stroke: 0px;
+p, a, li {
+    margin: 0.5rem;
+    font-size: 1.2rem;
 }
 
-.about-me-paragraph {
-  font-size: 19px;
-}
-
-.navbar-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #222;
-    z-index: 999;
-}
-
-.text-center {
-    text-align: center;
-}
-
-@media (max-width: 991px) {
-    .text-sm-center {
-        text-align: center;
-    }
-}
-
-
-@media (min-width: 992px) {
-    .text-sm-center {
-        text-align: left;
-    }
-}
-
-.heading {
-    padding-top: 25px;
-}
-
-section div.container {
-    padding-top: 0px;
-    padding-bottom: 0px;
+ul {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 0px;
+    padding-left: 2rem;
+    font-size: 1.22rem;
 }
 
 .row {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    align-items: center;
+    gap: 16px; /* Space between columns */
+
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 16px;
+    justify-content: center;
+    align-items: start;
+
+    margin-bottom: 50px;
+  }
+
+.box, .text-box, .img-box {
+    width: 100%; /* Ensures content stays responsive */
+    max-width: 535px;
 }
 
-.title-with-icon
-{
-    margin-right: 40px;
+.full-width-box {
+    grid-column: 1 / -1; /* Span from the first to the last column */
+    width: 100%;
 }
 
-.name-header {
-    background-color: #088ffc;
-    color: white;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-.projects {
-    background-color: white;
-    color: black;
+.footer {
+    padding: 35px;
+    font-size: 18px;
 }
 
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 1rem;
+    background-color: #0e0e0e;
+    color: #F0F0F0;
+    font-family: 'Roboto', sans-serif;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the header spans the full width */
+    box-sizing: border-box;
+    z-index: 1000;
+
+    height: var(--header-height);
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.main-navigation {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #F0F0F0;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.main-navigation a:hover {
+    color: #0073e6; /* Accent color */
+}
+
+.contact-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-icons a {
+    color: #F0F0F0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #0073e6;
+}
+
+
+
+/* Video + game containers */
+/* */ 
+/* */ 
 .sm-video-wrapper {
     width: 251px;
     margin: 30px auto 10px;
@@ -108,54 +168,29 @@ section div.container {
     padding: 8px;
 }
 
-.skills {
-    background-color: #eee;
-    color: black;
-}
-
-    .skills div.container {
-        max-width: 768px;
+@media (max-width: 900px) { /* Adjust for tablets and smaller screens */
+    .row {
+      grid-template-columns: 1fr; /* Single column layout */
     }
+  }
 
-    .skills h4 {
-        display: inline-block
-    }
-
-.unreal-icon, .unity-icon {
-    height: 50px;
-    width: 50px;
-    background-color: transparent;
-    vertical-align: middle;
-    margin-right: 5px; 
+.white-icon {
+    filter: brightness(0) invert(1); /* Makes the PNG white */
 }
 
-.skill-icon {
-    height: 60px;
-    width: 60px;
-    background-color: transparent;
-    vertical-align: middle;
-    margin-left: 5px;
-    margin-right: 5px; 
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.footer {
-    background-color: #088ffc;
-    padding: 35px;
-    color: white;
-    font-size: 18px;
-}
-
-.gray-background {
-    background-color: #e7e7e7;
-}
-
-.blue-background {
-    background-color: #088ffc;
-}
-
-.side-padding {
-    padding-left: 40px;
-    padding-right: 40px;
-}
+/* General link styles */
+a {
+    color: #4e9aff; /* Bright blue color for contrast */
+    text-decoration: none; /* Removes the underline for a cleaner look */
+  }
+  
+  /* Hover effect */
+  a:hover {
+    color: #82caff; /* Lighter shade for hover */
+    text-decoration: underline; /* Adds underline on hover for better UX */
+  }
+  
+  /* Visited links */
+  a:visited {
+    color: #8a9aff; /* Slightly muted for visited links */
+  }

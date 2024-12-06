@@ -6,218 +6,123 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<header class="site-header">
+    <div class="logo">
+        <img src="images/FrisbeeStudiosLogo.png" width = "75"> <!-- Replace with your logo or an <img> tag -->
+    </div>
+    <nav class="main-navigation">
+        <h2>Luke Frisbee</h2>
+    </nav>
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/lukefrisbee/" target="_blank" aria-label="Linkedin">
+            <img src="images/linkedin.png" class="white-icon" alt="LinkedIn Icon" width="35" height="35">
+        </a>
+        <a href="https://github.com/LukeFrisbee/" target="_blank" aria-label="Github">
+            <img src="images/github.png" class="white-icon" alt="LinkedIn Icon" width="35" height="35">
+        </a>    
+        <a href="mailto:lukebfrisbee@gmail.com" target="_blank" aria-label="Email">
+            <img src="images/envelope.png" class="white-icon" alt="LinkedIn Icon" width="35" height="35">
+        </a>
+    </div>
+</header>
 
-    <!-- Name Header -->
-    <section class="name-header" id="name-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <h1 class="name">Luke Frisbee</h1>
-                    <h3 class="white"> Software Engineer &amp; Game Developer</h3>
+
+<body>
+    <section id>
+        <div class="row">
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <!-- <section id = "Skills">
+        <div class="row">
+                <div class="text-box">
+                <h2> Skills </h2>
+                <ul>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>GLSL</li>
+                    <li>HLSL</li>
+                    <li>Unity Engine</li>
+                    <li>Unreal Engine</li>
+                    <li>Vulkan</li>
+                    <li>OpenGL</li>
+                </ul>
+            </div>
+        </div>
+    </section>   -->
+
+    <section id = "Beliefs">
+        <div class="row">
+            <div class="full-width-box">
+                <h2>I believe:</h2>
+                <ul>
+                    <li><b>Empathy is the heart of great design.</b><br>
+                        Creating something meaningful starts with stepping into the player’s world, seeing through their eyes and understanding their needs. True player experiences aren’t contrived; they emerge from observing and learning how players engage with your game.</li>
+                    <li><b>Creativity and logic are inseparable.</b><br>
+                        Great games emerge when imagination tests logic, and logic gives structure to imagination. By balancing these elements, we create experiences that feel intuitive yet captivating.</li>
+                    <li><b>Simplicity amplifies impact.</b><br>
+                        Every element in a game should serve a purpose, helping players focus on the experience rather than the mechanics. Simplicity isn’t about removing complexity, it’s about distilling ideas to their most impactful form.</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Projects -->
-    <section class="projects" id="projects">
-        <div class="container">
-
-            <!-- The Squeaky Affair -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <h3 class="text-center title-with-icon"><img src="images/icons/Unreal.png" class="unreal-icon" /> The Squeaky Affair </h3>
-                        <p>
-                            The detective agency Deeper & Deeper has solved many convoluted cases in its time, but this may be the twistiest one yet. The clues just don’t seem to fit together, and there’s only one thing to be done. 
-                        </p>
-                        <p>
-                            <em>The Squeaky Affair</em> is a puzzle game developed within 72 hours as a team of three for Ludum Dare 48: 
-                        </p>
-                        <p>
-                            <a href="https://ldjam.com/events/ludum-dare/48/the-squeaky-affair" target="_blank">https://ldjam.com/events/ludum-dare/48/the-squeaky-affair</a>
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-8 text-center side-padding">
-                        <video controls poster="images/SqueakyAffair.jpg" class="video-responsive">
-                            <source src="videos/DeeperAndDeeper.mp4" type="video/mp4">
-                            <div class="no-video-wrapper">
-                                Sorry, your browser does not support the &lt;video&gt; tag used on this page.
-                            </div>
-                        </video>
-                    </div>
-                </div>
+    <section id="Projects">
+        <div class="row">
+            <div class="text-box">
+                <h2>Quacking The Case</h2>
+                <p>My solo project releasing to steam Q1 2025. I am responsible for all disciplines such as programming, game design, art, marketing, etc.</p>
+                <ul>
+                    <li>
+                        <b>Tools:</b> C#, Unity Engine
+                    </li>
+                    <li>
+                        <b>Link:</b><a href="https://store.steampowered.com/app/3156700/Quacking_The_Case/" target="_blank">https://store.steampowered.com/app/3156700/Quacking_The_Case</a>
+                    </li>
+                </ul>
             </div>
-
-            <!-- TDS  -->
-            <div class="row gray-background">
-                <div class="col-lg-12 content">
-                    <div class="col-xs-12 col-sm-12 col-md-8 text-center side-padding">
-                        <video controls class="video-responsive" muted>
-                            <source src="videos/TDS.mp4" type="video/mp4">
-                            <div class="no-video-wrapper">
-                                Sorry, your browser does not support the &lt;video&gt; tag used on this page.
-                            </div>
-                        </video>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <h3 class="text-center title-with-icon"><img src="images/icons/Unity.png" class="unity-icon" /> TDS </h3>
-                        <p>
-                            TDS is 4 player online co-op base builder, utilizing Photon Fusion as its network solution.
-                            A frankenstien of many genres, it primarily combines elements from twin-stick shooters, roguelikes, and RTS games. TDS is currently very early in development and is planned to release on PC and Console in the distant future.
-                        </p>
-                    </div>
-                </div>
+            <div class="img-box">
+                <video alt="Quacking The Case Trailer" width = "535" controls>
+                    <source src="videos/QuackingTheCase-Trailer.mp4" type="video/mp4">
+                </video>
             </div>
-
-            <!-- Space Ship -->
-            <div class="row">
-                <div class="col-lg-12 content">
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <h3 class="text-center title-with-icon"><img src="images/icons/Unity.png" class="unity-icon" /> Space Sim </h3>
-                        <p>
-                            This arcade space simulator is a explorative project of mine. The genre was chosen to challenge my technical skills and my grasp of in-depth game engine systems, such as physics and rendering. I heavily enjoy developing the art; it keeps my modeling skills at a low scope, forgoing complex animation and allowing me to focus on the game itself. 
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-8 text-center side-padding">
-                        <video controls poster="images/EntropicSpace.png" class="video-responsive" muted>
-                            <source src="videos/SpaceController.mp4" type="video/mp4">
-                            <div class="no-video-wrapper">
-                                Sorry, your browser does not support the &lt;video&gt; tag used on this page.
-                            </div>
-                        </video>
-                    </div>
-                </div>
+        </div>
+    
+        <div class="row">
+            <div class="text-box">
+                <h2>Vulkan Rendering Engine</h2>
+                <p>
+                    A custom ECS game engine built in C++ with Vulkan. 
+                </p>
+                <ul>
+                    <li><b>Tools:</b> C++, Vulkan, GLSL, CMake</li>
+                    <li><b>Link:</b><a href="https://github.com/LukeFrisbee/Frisbee_Engine" target="_blank">https://github.com/LukeFrisbee/Frisbee_Engine</a></li>
+                </ul>
             </div>
-
-            <!-- 3D Battleship -->
-            <div class="row gray-background">
-                <div class="col-lg-12">
-                    <div class="col-xs-12 col-sm-12 col-md-8 text-center side-padding">
-                        <video controls poster="images/Battleship.jpg" class="video-responsive">
-                            <source src="videos/Battleship.mp4" type="video/mp4">
-                            <div class="no-video-wrapper">
-                                Sorry, your browser does not support the &lt;video&gt; tag used on this page.
-                            </div>
-                        </video>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <h3 class="text-center title-with-icon"><img src="images/icons/Unity.png" class="unity-icon" /> 3D Battleship </h3>
-                        <p>
-                            3D computer implementation of the strategy game Battleship developed as a framework for software developers to compete in a C# algorithm tournament. Each competitor’s code is compiled into a DLL and runs through the project. These algorithms are then pitted against one another, and the project calculates and analyzes each competitor’s AI’s decision.
-                        </p>
-                    </div>
-                </div>
+            <div class="img-box">
+                <img src="images/editorUI.png" alt="Engine UI" width="535">
             </div>
-
-            <!-- Mobile Games -->
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-3">
-                    <h3 class="text-center title-with-icon"><img src="images/icons/Unity.png" class="unity-icon" /> 3D RogueLike </h3>
-                    <p>
-                        As a prototype for a mobile 3D RogueLike game idea, this project was developed throughout my first year at university. The project, along with many others, encouraged exercising self-growth alongside my courses, as I wanted to challenge my code writing capabilities and expand my understanding of what makes video games tick.
-                    </p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-3">
-                    <div class="sm-video-wrapper">
-                        <video controls poster="images/3DRoguelike.jpg" width="251" height="450" class="video-responsive" muted>
-                            <source src="videos/3DRoguelike.mp4" type="video/mp4">
-                            <div class="no-video-wrapper">
-                                Sorry, your browser does not support the &lt;video&gt; tag used in this demo.
-                            </div>
-                        </video>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-3">
-                    <h3 class="text-center title-with-icon"><img src="images/icons/Unity.png" class="unity-icon" /> Star Comet </h3>
-                    <p>
-                        Star Comet is a simple, traditional scrolling game designed for android and ios. As the first game I ever developed (eight years ago), it holds a nostalgic fondness and place for me. This humble mobile game dawned a lifelong passion for computer science and video game development.
-                    </p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-3">
-                    <div class="sm-video-wrapper">
-                        <video controls poster="images/StarComet.jpg" width="251" height="450" class="video-responsive">
-                            <source src="videos/StarComet.mp4" type="video/mp4">
-                            <div class="no-video-wrapper">
-                                Sorry, your browser does not support the &lt;video&gt; tag used on this page.
-                            </div>
-                        </video> 
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <div class="heading text-center">
-                <h1>Skills</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-0 col-md-4 col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-4">
-                    <img src="images/icons/CSharp.png" class="skill-icon" /><h4>C#</h4>
-                </div>
-                <div class="col-md-offset-0 col-md-4 col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-4">
-                    <img src="images/icons/C++.png" class="skill-icon" /><h4>C++</h4>
-                </div>
-                <div class="col-md-offset-0 col-md-4 col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-4">
-                    <img src="images/icons/Python.png" class="skill-icon" /><h4>Python</h4>
-                </div>
-                <div class="col-md-offset-0 col-md-4 col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-4 ">
-                    <img src="images/icons/Unity.png" class="skill-icon" /><h4>Unity Engine</h4>
-                </div>
-                <div class="col-md-offset-0 col-md-4 col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-4 ">
-                    <img src="images/icons/Unreal.png" class="skill-icon" /><h4>Unreal Engine</h4>
-                </div>
-                <div class="col-md-offset-0 col-md-4 col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-4">
-                    <img src="images/icons/VisualStudio.png" class="skill-icon" /><h4>Visual Studio</h4>
-                </div>
-                <div class="col-md-offset-0 col-md-4 col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-4">
-                    <img src="images/icons/Blender.png" class="skill-icon" /><h4>Blender</h4>
-                </div>
-                <div class="col-md-offset-0 col-md-4 col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-4">
-                    <img src="images/icons/OpenCV.png" class="skill-icon" /><h4>OpenCV</h4>
-                </div>
-                <div class="col-md-offset-0 col-md-4 col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-4">
-                    <img src="images/icons/Git.png" class="skill-icon" /><h4>Git</h4>
-                </div>
-            </div>
-            <br>
-            <h4><b>Others:</b> Github, HTML, CSS, ASP.NET, AWS, SQL, Java, Jupyter Notebook, Linux, etc.<h4>
         </div>
     </section>
 
     <!-- Footer -->
     <section id="footer">
         <div class="footer">
-            <span>&copy; 2023 Luke Frisbee </span>
+            <span>&copy; 2024 Luke Frisbee </span>
         </div>
     </section>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script>
-      $( document).ready(function() {
-        changeHeight();
-        $( window ).resize(changeHeight);
-      });
-      function changeHeight(){
-        var unityContainer = $('#unityContainer');
-        var w = unityContainer.width();
-        unityContainer.height(w * .625);
-      }
-    </script>
 
 </body>
 </html>
