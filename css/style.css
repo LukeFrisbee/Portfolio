@@ -48,9 +48,8 @@ p {
 
 .about-me {
     padding: 50px;
-    background-color: var(--dark-background-color);
+    /* background-color: var(--dark-background-color); */
     border-radius: 8px; /* Rounded corners for a modern look */
-
     grid-column: span 2;
 }
 
@@ -234,7 +233,17 @@ header .main-navigation h2 {
 }
 
 /* Mobile-Specific Styling */
-/* @media (max-width: 500px) {
+@media (max-width: 662px) {
+    .about-me {
+        padding: 20px;
+        background-color: inherit;
+    }
+
+    .project-description {
+        padding: 10px;
+        background-color: inherit;
+    }
+
     .logo {
         display: none; 
     }
@@ -255,4 +264,4 @@ header .main-navigation h2 {
     .main-navigation {
         order: -1;
     }
-} */
+}
