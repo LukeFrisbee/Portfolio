@@ -132,21 +132,6 @@ footer {
     border-top: 1px solid var(--divider-color);
 }
 
-/* Adjustments for smaller screens */
-@media (max-width: 692px) {
-    .row {
-        grid-template-columns: 1fr; /* Force a single-column layout */
-    }
-
-    .project-description {
-        grid-column: span 1; /* Ensure consistent column usage */
-    }
-
-    .grid-element {
-        gap: 10px; /* Optional: Smaller gaps between elements on mobile */
-    }
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -248,23 +233,23 @@ header .main-navigation h2 {
 /* Mobile-Specific Styling */
 @media (max-width: 500px) {
     .logo {
-        display: none; /* Hide the logo */
+        display: none; 
     }
 
     .contact-icons {
-        display: none; /* Hide contact icons */
+        display: none;
     }
 
     .contact-dropdown {
-        display: block; /* Show dropdown */
+        display: block; 
     }
 
     .site-header {
-        flex-direction: column; /* Stack header elements */
+        flex-direction: column;
         align-items: flex-start;
     }
 
     .main-navigation {
-        order: -1; /* Move navigation to the top */
+        order: -1;
     }
 }
