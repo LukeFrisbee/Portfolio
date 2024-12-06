@@ -133,14 +133,21 @@ footer {
 /* Adjustments for smaller screens */
 @media (max-width: 692px) {
     .row {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Force a single-column layout */
+    }
+
+    .about-me, .project-description {
+        grid-column: span 1; /* Ensure consistent column usage */
     }
 
     .about-me {
-        padding: 20px;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .grid-element {
+        gap: 10px; /* Optional: Smaller gaps between elements on mobile */
     }
 }
-
 
 
 header {
