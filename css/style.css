@@ -50,6 +50,8 @@ p {
     padding: 50px;
     background-color: var(--dark-background-color);
     border-radius: 8px; /* Rounded corners for a modern look */
+
+    grid-column: span 2;
 }
 
 .about-me p {
@@ -140,15 +142,10 @@ footer {
         grid-column: span 1; /* Ensure consistent column usage */
     }
 
-    .about-me {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-
     .grid-element {
         gap: 10px; /* Optional: Smaller gaps between elements on mobile */
     }
 }
-
 
 header {
     display: flex;
