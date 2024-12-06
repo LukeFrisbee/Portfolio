@@ -85,7 +85,6 @@ p {
     margin-bottom: 52px;
     padding-left: 1rem;
     padding-right: 1rem;
-    max-width: 100%;
 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: stretch;
