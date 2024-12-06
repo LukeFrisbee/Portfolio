@@ -138,7 +138,7 @@ footer {
         grid-template-columns: 1fr; /* Force a single-column layout */
     }
 
-    .about-me, .project-description {
+    .project-description {
         grid-column: span 1; /* Ensure consistent column usage */
     }
 
