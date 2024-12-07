@@ -190,15 +190,28 @@
 
             // Ensure there's a video inside the grid element
             if (video) {
-                // Play the video when hovering over the grid element
-                gridElement.addEventListener('mouseenter', () => {
-                    video.play();
-                });
+                // Check if the device is mobile (below a certain width)
+                const isMobile = window.innerWidth <= 662;
 
-                // Pause and reset the video when the mouse leaves the grid element
-                gridElement.addEventListener('mouseleave', () => {
-                    video.pause();
-                });
+                if (isMobile) {
+                    // For mobile: Play/Pause the video on tap
+                    gridElement.addEventListener('click', () => {
+                        if (video.paused) {
+                            video.play();
+                        } else {
+                            video.pause();
+                        }
+                    });
+                } else {
+                    // For desktop: Play the video on hover
+                    gridElement.addEventListener('mouseenter', () => {
+                        video.play();
+                    });
+
+                    gridElement.addEventListener('mouseleave', () => {
+                        video.pause();
+                    });
+                }
             }
         });
     </script>
