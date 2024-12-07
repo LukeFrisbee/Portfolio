@@ -57,41 +57,37 @@
 
 
 <body>
-    <section id = "About Me">
-    <div class="row">
-        <div class="dark-background full-width-box about-me">
-            <h2>Hi, I'm Frisbee.</h2>
-            <p>I love taking an idea (like a duck detective solving puzzles) and turning it into something people can actually play, explore, and smile about.</p>
-            <p>It’s always fun figuring things out with other people, whether it’s untangling a tricky mechanic or seeing how someone else’s perspective can take an idea in a direction you’d never expect. 
-                The best projects seem to come together when <b>everyone feels heard</b>, and the end result feels like something you couldn’t have made on your own. There’s nothing better than knowing what you’ve built makes sense to others, whether they’re playing it or helping bring it to life.</p>
-        </div>
+    <section id = "About Me" class="row container">
+    <div class="dark-background full-width-box about-me">
+        <h2>Hi, I'm Frisbee.</h2>
+        <p>I love taking an idea (like a duck detective solving puzzles) and turning it into something people can actually play, explore, and smile about.</p>
+        <p>It’s always fun figuring things out with other people, whether it’s untangling a tricky mechanic or seeing how someone else’s perspective can take an idea in a direction you’d never expect. 
+            The best projects seem to come together when <b>everyone feels heard</b>, and the end result feels like something you couldn’t have made on your own. There’s nothing better than knowing what you’ve built makes sense to others, whether they’re playing it or helping bring it to life.</p>
     </div>
-
     </section>
-    <!-- Skills -->
-    <!-- <section id = "Skills">
-        <div class="row">
-                <div class="text-box">
-                <h2> Skills </h2>
-                <ul>
-                    <li>C++</li>
-                    <li>C#</li>
-                    <li>GLSL</li>
-                    <li>HLSL</li>
-                    <li>Unity Engine</li>
-                    <li>Unreal Engine</li>
-                    <li>Vulkan</li>
-                    <li>OpenGL</li>
-                </ul>
-            </div>
+
+    <!-- <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class = "skill-row">
+            <span class="skill-box">C++</span>
+            <span class="skill-box">Vulkan</span>
+            <span class="skill-box">C#</span>
+            <span class="skill-box">Unity</span>
+            <span class="skill-box">GLSL</span>
+            <span class="skill-box">HLSL</span>
+            <span class="skill-box">Cmake</span>
+            <span class="skill-box">Cmake</span>
         </div>
-    </section>   -->
+    </section> -->
 
     <!-- Projects -->
-    <section id="Projects">
+    <section id="Projects" class="container">
+        <h2>Projects</h2>
         <div class="row">
+
+            <!-- Quacking The Case -->
             <div class="grid-element">
-                <video alt="Quacking The Case Trailer" class="video-responsive" controls>
+                <video loop muted playsinline preload="auto" class="video-responsive">
                     <source src="videos/QuackingTheCase-Trailer.mp4" type="video/mp4">
                 </video>
                 <div class="dark-background project-description">
@@ -107,7 +103,8 @@
                     </ul>
                 </div>
             </div>
-    
+
+            <!-- Vulkan Engine -->
             <div class="grid-element">
                 <img src="images/editorUI.png" alt="Engine UI" class="video-responsive">
                 <div class="project-description dark-background">
@@ -118,6 +115,40 @@
                     <ul>
                         <li><b>Tools:</b> C++, Vulkan, GLSL, CMake</li>
                         <li><b>Link: </b><a href="https://github.com/LukeFrisbee/Frisbee_Engine" target="_blank">https://github.com/LukeFrisbee/Frisbee_Engine</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Battleship -->
+            <div class="grid-element">
+                <video loop muted playsinline preload="auto" class="video-responsive">
+                    <source src="videos/BattleshipClip.mp4" type="video/mp4">
+                </video>
+                <div class="project-description dark-background">
+                    <h2>Battleship DLL Sim</h2>
+                    <p>
+                        A Battleship Simulation that runs DLLs of AIs built by students. 
+                    </p>
+                    <ul>
+                        <li><b>Tools:</b> C#, Unity</li>
+                        <!-- <li><b>Link: </b><a href="https://github.com/LukeFrisbee/Frisbee_Engine" target="_blank">https://github.com/LukeFrisbee/Frisbee_Engine</a></li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Space Game -->
+            <div class="grid-element">
+                <video loop muted playsinline preload="auto" class="video-responsive">
+                    <source src="videos/RouglikeSpaceShipClip.mp4" type="video/mp4">
+                </video>
+                <div class="project-description dark-background">
+                    <h2>Rouglike Space Game</h2>
+                    <p>
+                        A rouglike space game that is a WIP. Currently it mostly entails a polished flight control system.
+                    </p>
+                    <ul>
+                        <li><b>Tools:</b> C#, Unity</li>
+                        <!-- <li><b>Link: </b><a href="https://github.com/LukeFrisbee/Frisbee_Engine" target="_blank">https://github.com/LukeFrisbee/Frisbee_Engine</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -148,5 +179,28 @@
         </div>
     </section>
 
+
+    <script>
+        // Select all grid elements
+        const gridElements = document.querySelectorAll('.grid-element');
+
+        // Loop through each grid element
+        gridElements.forEach(gridElement => {
+            const video = gridElement.querySelector('video');
+
+            // Ensure there's a video inside the grid element
+            if (video) {
+                // Play the video when hovering over the grid element
+                gridElement.addEventListener('mouseenter', () => {
+                    video.play();
+                });
+
+                // Pause and reset the video when the mouse leaves the grid element
+                gridElement.addEventListener('mouseleave', () => {
+                    video.pause();
+                });
+            }
+        });
+    </script>
 </body>
 </html>
