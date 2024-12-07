@@ -267,6 +267,7 @@ header .main-navigation h2 {
     }
 
     .grid-element {
+        grid-column: span 1;
         width: 100%;
     }
 
