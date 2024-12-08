@@ -184,15 +184,15 @@
     <script>
         // Select all grid elements
         const gridElements = document.querySelectorAll('.grid-element');
+        const isMobile = window.innerWidth <= 662;
 
         // Loop through each grid element
         gridElements.forEach(gridElement => {
             const video = gridElement.querySelector('video');
-
+            
             // Ensure there's a video inside the grid element
             if (video) {
                 // Check if the device is mobile (below a certain width)
-                const isMobile = window.innerWidth <= 662;
 
                 if (!isMobile) {
                     // For desktop: Play the video on hover
@@ -207,29 +207,32 @@
             }
         });
 
+        if (isMobile)
+        {
             document.addEventListener("DOMContentLoaded", () => {
-            const videos = document.querySelectorAll("video");
+                const videos = document.querySelectorAll("video");
 
-            const handleVideoPlayback = () => {
-                videos.forEach((video) => {
-                    const rect = video.getBoundingClientRect();
-                    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                const handleVideoPlayback = () => {
+                    videos.forEach((video) => {
+                        const rect = video.getBoundingClientRect();
+                        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
 
-                    if (isVisible) {
-                        if (video.paused) video.play(); // Play when video is visible
-                    } else {
-                        if (!video.paused) video.pause(); // Pause when video is not visible
-                    }
-                });
-            };
+                        if (isVisible) {
+                            if (video.paused) video.play(); // Play when video is visible
+                        } else {
+                            if (!video.paused) video.pause(); // Pause when video is not visible
+                        }
+                    });
+                };
 
-            // Run on page load and whenever the user scrolls
-            handleVideoPlayback();
-            window.addEventListener("scroll", handleVideoPlayback);
+                // Run on page load and whenever the user scrolls
+                handleVideoPlayback();
+                window.addEventListener("scroll", handleVideoPlayback);
 
-            // Optional: Run on resize for better responsiveness
-            window.addEventListener("resize", handleVideoPlayback);
-        });
+                // Optional: Run on resize for better responsiveness
+                window.addEventListener("resize", handleVideoPlayback);
+            });
+        }
     </script>
 </body>
 </html>
