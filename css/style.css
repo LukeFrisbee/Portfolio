@@ -264,7 +264,10 @@ header .main-navigation h2 {
 /* Mobile-Specific Styling */
 @media (max-width: 662px) {
     .row {
-        grid-template-columns: 1fr
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px; /* Add space between items */
+        width: 100%; /* Ensure full width on mobile */
     }
     
     .about-me {
