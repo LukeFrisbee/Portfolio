@@ -57,8 +57,8 @@
 
 
 <body>
-    <section id = "About Me" class="row container">
-    <div class="dark-background about-me">
+    <section id = "About Me" class="container">
+    <div class="dark-background about-me row">
         <h1>Hi, I'm Frisbee.</h1>
         <p>I love taking an idea (like a duck detective solving puzzles) and turning it into something people can actually play, explore, and smile about.</p>
         <p>It’s always fun figuring things out with other people, whether it’s untangling a tricky mechanic or seeing how someone else’s perspective can take an idea in a direction you’d never expect. 
@@ -186,15 +186,14 @@
         const gridElements = document.querySelectorAll('.grid-element');
         const isMobile = window.innerWidth <= 662;
 
-        // Loop through each grid element
-        gridElements.forEach(gridElement => {
-            const video = gridElement.querySelector('video');
-            
-            // Ensure there's a video inside the grid element
-            if (video) {
-                // Check if the device is mobile (below a certain width)
-
-                if (!isMobile) {
+        if (!isMobile)
+        {
+            // Loop through each grid element
+            gridElements.forEach(gridElement => {
+                const video = gridElement.querySelector('video');
+                
+                // Ensure there's a video inside the grid element
+                if (video) {
                     // For desktop: Play the video on hover
                     gridElement.addEventListener('mouseenter', () => {
                         video.play();
@@ -204,8 +203,8 @@
                         video.pause();
                     });
                 }
-            }
-        });
+            });
+        }
 
         if (isMobile)
         {
