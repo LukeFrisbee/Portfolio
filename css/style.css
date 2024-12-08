@@ -266,7 +266,6 @@ header .main-navigation h2 {
     .row {
         display: flex;
         flex-direction: column; /* Stack items vertically */
-        gap: 15px; /* Add space between items */
         width: 100%; /* Ensure full width on mobile */
     }
     
