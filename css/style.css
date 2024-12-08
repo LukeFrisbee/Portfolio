@@ -270,6 +270,7 @@ header .main-navigation h2 {
     .about-me {
         background-color: inherit;
         grid-column: span 1;
+        width: 100%;
     }
 
     .grid-element {
