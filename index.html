@@ -60,11 +60,13 @@
     <section id = "About Me" class="container">
     <div class="dark-background about-me">
         <h1>Hi, I'm Frisbee.</h1>
+        <p>I love making games that mix brains and heart (and sometimes ducks). Games that wake up curiosity and invite you to be present. I like when they’re short, too. Little, thoughtful things that fit into life rather than compete with it. I want them to feel human, like someone made them by hand, with care and a bit of soul showing through.</p>
         <!-- <p>I love taking an idea (like a duck detective solving puzzles) and turning it into something people can actually play, explore, and smile about.</p> -->
         <!-- <p>It’s always fun figuring things out with other people, whether it’s untangling a tricky mechanic or seeing how someone else’s perspective can take an idea in a direction you’d never expect. 
             The best projects seem to come together when everyone feels heard, and the end result feels like something you couldn’t have made on your own. There’s nothing better than knowing what you’ve built makes sense to others, whether they’re playing it or helping bring it to life.</p> -->
         <!-- <p>I’m all about turning ideas into something real and getting them into people’s hands, quickly and thoughtfully. Speed and quality aren’t opposites; in fact, they go hand in hand. Quality comes from smart prioritization, focusing on what matters most, while moving fast keeps momentum alive and creates space for valuable feedback.</p> -->
-        <p>I’m all about turning ideas (like a duck detective solving puzzles) into something real and getting them into people’s hands, quickly and thoughtfully. Speed and quality aren’t opposites; in fact, they go hand in hand. Quality comes from smart prioritization, focusing on what matters most, while moving fast keeps momentum alive and creates space for valuable feedback.</p>
+        <!-- <p>I’m all about turning ideas (like a duck detective solving puzzles) into something real and getting them into people’s hands, quickly and thoughtfully. Speed and quality aren’t opposites; in fact, they go hand in hand. Quality comes from smart prioritization, focusing on what matters most, while moving fast keeps momentum alive and creates space for valuable feedback.</p> -->
+    
     </div>
     </section>
 
@@ -82,42 +84,88 @@
         </div>
     </section> -->
 
-    <!-- Projects -->
-    <section id="Projects" class="container">
-        <h1>Projects</h1>
+    <!-- Released Games -->
+     <section id="Projects" class="container">
+        <h1>Released Games</h1>
         <div class="row">
 
             <!-- Quacking The Case -->
             <div class="grid-element">
-                <video loop muted playsinline preload="auto" class="video-responsive">
+                <video loop muted playsinline preload="auto" class="video-responsive" poster="images/QuackingTheCase_GameplayScreenshot.jpg">
                     <source src="videos/QuackingTheCase-Trailer.mp4" type="video/mp4">
                 </video>
                 <div class="dark-background project-description">
                     <h2>Quacking The Case</h2>
-                    <p>My personal commercial project releasing on steam in 2026.</p>
-                    <ul>
+                    <p>Demo out now! · Full release 2026</p>
+                    <p>Step into the webbed feet of Detective Gregory Steel, Featherdale’s top duck detective, and unravel a mystery in this quirky string-pulling logic game. <a href="https://store.steampowered.com/app/3156700/Quacking_The_Case/" target="_blank">View on Steam →</a></p>
+                    <p>Made in Unity</p>
+                    <!-- <ul>
                         <li>
                             <b>Tools:</b> C#, Unity Engine
                         </li>
                         <li>
                             <b>Link: </b><a href="https://store.steampowered.com/app/3156700/Quacking_The_Case/" target="_blank">https://store.steampowered.com/app/3156700/Quacking_The_Case</a>
-                        </li>
-                    </ul>
+                        </li> 
+                    </ul> -->
                 </div>
             </div>
 
+            <!-- The Last Elixir -->
+             <div class="grid-element">
+                <video loop muted playsinline preload="auto" class="video-responsive" poster="images/TheLastElixir.jpg">
+                    <source src="videos/TheLastElixir_Website.mp4" type="video/mp4">
+                </video>
+                <div class="dark-background project-description">
+                    <h2>The Last Elixir</h2>
+                    <p>Out now on Steam!</p>
+                    <p>You are a journeyman alchemist: experiment to learn the secrets of the alchemical sciences, and leverage them to produce a diverse menu of potions for a procession of weird and spooky customers in this compact narrative puzzle experience. <a href="https://store.steampowered.com/app/4041890/The_Last_Elixir/" target="_blank">View on Steam →</a></p>
+                    <p>Made in Unity</p>
+                    <!-- <ul>
+                        <li>
+                            <b>Tools:</b> C#, Unity Engine
+                        </li>
+                        <li>
+                            <b>Link: </b><a href="https://store.steampowered.com/app/3156700/Quacking_The_Case/" target="_blank">https://store.steampowered.com/app/3156700/Quacking_The_Case</a>
+                        </li> 
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="Projects" class="container">
+        <h1>Projects</h1>
+        <div class="row">
             <!-- Vulkan Engine -->
             <div class="grid-element">
                 <img src="images/editorUI.png" alt="Engine UI" class="video-responsive">
                 <div class="project-description dark-background">
-                    <h2>Vulkan Rendering Engine</h2>
+                    <h2>Vulkan Game Engine</h2>
                     <p>
-                        This is my custom ECS game engine built from scratch with C++ and Vulkan. 
+                       Custom C++ game engine built with Vulkan and ECS (EnTT), featuring an ImGui editor for real-time debugging and shader tuning. Optimized GPU workloads using descriptor sets and command buffers, with performance profiling via RenderDoc and Vulkan validation layers.
                     </p>
-                    <ul>
+                    <p>Made in C++, GLSL, and CMAKE</P>
+                    <!-- <ul>
                         <li><b>Tools:</b> C++, Vulkan, GLSL, CMake</li>
                         <li><b>Link: </b><a href="https://github.com/LukeFrisbee/Frisbee_Engine" target="_blank">https://github.com/LukeFrisbee/Frisbee_Engine</a></li>
-                    </ul>
+                    </ul> -->
+                </div>
+            </div>
+
+            <!-- Velocity Matrix -->
+            <div class="grid-element">
+                <video loop muted playsinline preload="auto" class="video-responsive">
+                    <source src="videos/RouglikeSpaceShipClip.mp4" type="video/mp4">
+                </video>
+                <div class="project-description dark-background">
+                    <h2>Velocity Matrix</h2>
+                    <p>Velocity Matrix is a 3D spaceflight prototype focused on speed, control, and cinematic motion. It showcases iterative work on flight systems, physics tuning, and player feedback design.
+                    </p>
+                    <p>Made in Unity</p>
+                    <!-- <ul>
+                        <li><b>Tools: </b>C#, Unity</li>
+                    </ul> -->
                 </div>
             </div>
 
@@ -131,27 +179,11 @@
                     <p>
                         A Battleship Simulation that runs DLLs of AIs built by students. 
                     </p>
+                    <p>Made in Unity</p>
+                    <!--
                     <ul>
                         <li><b>Tools:</b> C#, Unity</li>
-                        <!-- <li><b>Link: </b><a href="https://github.com/LukeFrisbee/Frisbee_Engine" target="_blank">https://github.com/LukeFrisbee/Frisbee_Engine</a></li> -->
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Space Game -->
-            <div class="grid-element">
-                <video loop muted playsinline preload="auto" class="video-responsive">
-                    <source src="videos/RouglikeSpaceShipClip.mp4" type="video/mp4">
-                </video>
-                <div class="project-description dark-background">
-                    <h2>Rouglike Space Game</h2>
-                    <p>
-                        A rouglike space game that is a WIP. Currently it mostly entails a polished flight control system.
-                    </p>
-                    <ul>
-                        <li><b>Tools:</b> C#, Unity</li>
-                        <!-- <li><b>Link: </b><a href="https://github.com/LukeFrisbee/Frisbee_Engine" target="_blank">https://github.com/LukeFrisbee/Frisbee_Engine</a></li> -->
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
@@ -173,6 +205,10 @@
             </div>
         </div>
     </section> -->
+
+    <div style="margin-top: 200px; margin-bottom: 200px;">
+        <h2 style="text-align: center;"> Looking for a game developer or designer? <a href="mailto:lukebfrisbee@gmail.com" target="_blank">Let’s talk →</a></h1>
+    </div>
 
     <!-- Footer -->
     <section id="footer">
