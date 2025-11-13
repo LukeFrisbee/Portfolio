@@ -74,6 +74,12 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* flex: 1; */
+}
+
+.bottom-note {
+    /* align-self:self-end; */
+    /* margin-top: auto; */
 }
 
 .project-description:hover {
