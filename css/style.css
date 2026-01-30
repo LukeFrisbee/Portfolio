@@ -53,15 +53,23 @@ ul {
 }
 
 .about-me {
-    /* background-color: var(--dark-background-color); */
+       /* background-color: var(--dark-background-color); */
     border-radius: 8px; /* Rounded corners for a modern look */
+    background-color: var(--dark-background-color);
     grid-column: span 2;
+     padding: 15px 30px; /* 15px top/bottom, 20px left/right */
 }
 
 .about-me p {
     line-height: 1.8; /* Improve readability */
     text-indent: 2em;
     margin: 1.2rem 0;
+}
+
+.about-me p.quote {
+    justify-self: center;
+    text-indent: -2em;   /* negative of the indent you want */
+    padding-left: 2em; 
 }
 
 .project-description {
@@ -277,9 +285,10 @@ header .main-navigation h2 {
     }
     
     .about-me {
-        background-color: inherit;
-        grid-column: span 1;
         width: 100%;
+        padding-left: 1rem;  /* match .container padding */
+        padding-right: 1rem; /* ensure right space */
+        box-sizing: border-box; /* includes padding in width */
     }
 
     .grid-element {
